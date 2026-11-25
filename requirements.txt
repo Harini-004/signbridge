@@ -1,0 +1,9 @@
+mediapipe==0.10.14
+tensorflow==2.16.2
+protobuf==4.25.3
+numpy<2
+scikit-learn
+streamlit==1.35.0
+streamlit-webrtc==0.47.9
+pyarrow==16.1.0
+streamlit-mic-recorder==0.0.8
