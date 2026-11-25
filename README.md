@@ -29,7 +29,6 @@ Speech/Text → word lookup → avatar clips (A–Z fingerspelling fallback) →
 ## Limitations
 - Small vocabulary, trained on one signer
 - Sensitive to lighting and hands leaving the frame
-- Avatar clips: [state here whether they are ASL or ISL]
 - Browser speech recognition needs Chrome or Edge and an internet connection
 
 ## Setup
