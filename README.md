@@ -5,7 +5,7 @@ Two-way sign language translation with voice. Sign → text → speech, and spee
 ## Demo
 ▶ [Watch the full demo](docs/demo.mp4)
 
-**Live app (Text/Speech → Sign):** https://YOUR-APP-LINK.streamlit.app
+**Live app (Text/Speech → Sign):** https://signbridge--sign-speech-text-sign-speech.streamlit.app/
 Live camera recognition runs locally; see Setup below.
 
 ## Why
