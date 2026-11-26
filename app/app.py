@@ -12,6 +12,9 @@ import streamlit.components.v1 as components
 from streamlit_mic_recorder import speech_to_text
 import os
 DEPLOYED = os.path.exists("/mount/src")   # True only on Streamlit Community Cloud
+from pathlib import Path
+ROOT = Path(__file__).resolve().parent.parent
+APP_DEMO = ROOT / "docs" / "app_demo.mp4"
 
 def speak(text):
     # speaks through the browser's built-in voice; the comment makes each call unique
@@ -123,7 +126,10 @@ with tab1:
     if DEPLOYED:
         st.info("Live camera recognition needs a relay server that free hosting doesn't provide. "
                 "Here it is running; to try it yourself, run it locally (steps are in the GitHub README).")
-        st.video("docs/app_demo.mp4")
+        if APP_DEMO.exists():
+            st.video(APP_DEMO.read_bytes())
+        else:
+            st.warning(f"Demo clip not found at: {APP_DEMO}")
         st.stop()
     left, right = st.columns([1.2, 1], gap="large")
 
