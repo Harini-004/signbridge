@@ -125,6 +125,7 @@ with tab1:
             key="sign", video_processor_factory=Processor,
             media_stream_constraints={"video": True, "audio": False},
             async_processing=True,
+            rtc_configuration={"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]},
         )
 
     with right:
