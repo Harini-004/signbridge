@@ -2,7 +2,11 @@
 
 Two-way sign language translation with voice. Sign → text → speech, and speech/text → sign.
 
-![demo](docs/demo.gif)
+## Demo
+▶ [Watch the full demo](docs/demo.mp4)
+
+**Live app (Text/Speech → Sign):** https://YOUR-APP-LINK.streamlit.app
+Live camera recognition runs locally; see Setup below.
 
 ## Why
 Built to explore how computer vision and speech tools can make everyday communication easier between deaf and hearing people, starting with a small Sign Language vocabulary.

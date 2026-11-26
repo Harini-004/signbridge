@@ -10,6 +10,8 @@ import base64
 import json
 import streamlit.components.v1 as components
 from streamlit_mic_recorder import speech_to_text
+import os
+DEPLOYED = os.path.exists("/mount/src")   # True only on Streamlit Community Cloud
 
 def speak(text):
     # speaks through the browser's built-in voice; the comment makes each call unique
@@ -118,6 +120,11 @@ with tab2:
 
 # ---------- Sign → Text ----------
 with tab1:
+    if DEPLOYED:
+        st.info("Live camera recognition needs a relay server that free hosting doesn't provide. "
+                "Here it is running; to try it yourself, run it locally (steps are in the GitHub README).")
+        st.video("docs/app_demo.mp4")
+        st.stop()
     left, right = st.columns([1.2, 1], gap="large")
 
     with left:
