@@ -6,4 +6,5 @@ scikit-learn
 streamlit==1.35.0
 streamlit-webrtc==0.47.9
 pyarrow==16.1.0
+moviepy==1.0.3
 streamlit-mic-recorder==0.0.8
